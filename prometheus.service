@@ -1,0 +1,10 @@
+[Unit]
+Description=Prometheus
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=Prometheus
+Group=Prometheus
+Type=simple
+ExecStart
